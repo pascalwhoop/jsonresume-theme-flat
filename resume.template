@@ -138,11 +138,12 @@
 					<a href="{{.}}">{{.}}</a>
 				</div>
 				{{/website}}
-				{{#position}}
-				<div class="position">
-					{{.}}
-				</div>
-				{{/position}}
+
+				{{#each roles}}
+					<div class="position">
+						{{.}}
+					</div>
+				{{/each}}
 				{{#summary}}
 				<div class="summary">
 					<p>{{.}}</p>
